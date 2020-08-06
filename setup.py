@@ -5,8 +5,9 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="scimatch-tobask",
-    version="0.0.1",
     author="Tobias Ask",
+    use_scm_version=True,
+    setup_requires=['setuptools_scm'],
     author_email="tobias.ask.92@gmail.com",
     description="A collection of hamcrest matchers for Numpy and xarray",
     long_description=long_description,
